@@ -4,45 +4,34 @@ import './Footer.css'
 export function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-container">
-        <motion.div 
-          className="footer-brand"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <h3 className="footer-logo">
-            <span>BIANCHI</span>
-            <span className="footer-logo-accent">TILLETT</span>
-          </h3>
+      <motion.div 
+        className="footer-content"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
+        <div className="footer-brand">
+          <h3 className="footer-logo">Bianchi-Tillett</h3>
           <p className="footer-tagline">Construction Development Corporation</p>
-          <p className="footer-status">SYNDICATE LEVEL • $1B RUN RATE</p>
-        </motion.div>
+          <span className="footer-badge">Syndicate Level • $1B Run Rate</span>
+        </div>
 
-        <motion.div 
-          className="footer-divider"
-          initial={{ scaleX: 0 }}
-          whileInView={{ scaleX: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        />
+        <div className="footer-links">
+          <a href="https://invinciblelude.github.io/Bianchi-Master-list-projects/" className="main-site-link">
+            <span>←</span> View All Projects
+          </a>
+        </div>
 
-        <motion.div 
-          className="footer-bottom"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
+        <div className="footer-bottom">
           <p className="footer-copyright">
-            © {new Date().getFullYear()} Bianchi-Tillett Development Corporation. All rights reserved.
+            © {new Date().getFullYear()} Bianchi-Tillett Development Corporation
           </p>
           <p className="footer-note">
-            Financial projections and marketing benchmarks for strategic planning purposes.
+            Financial projections for strategic planning purposes
           </p>
-        </motion.div>
-      </div>
+        </div>
+      </motion.div>
     </footer>
   )
 }
