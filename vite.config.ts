@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   plugins: [react()],
-  base: '/Bianchi-Unlimited-Market-/',
-})
+  base: command === 'serve' ? '/' : '/Bianchi-Unlimited-Market-/',
+}))
