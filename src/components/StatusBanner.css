@@ -61,5 +61,29 @@
 }
 
 @media (max-width: 600px) {
-  .status-banner-inner { grid-template-columns: 1fr; }
+  .status-banner {
+    padding: var(--space-md);
+  }
+  
+  .status-banner-inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+  
+  .status-item {
+    padding: var(--space-md);
+  }
+  
+  .status-item-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .status-item-value {
+    font-size: 0.95rem;
+  }
+  
+  .status-item-label {
+    font-size: 0.6rem;
+  }
 }

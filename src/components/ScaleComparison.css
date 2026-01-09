@@ -296,3 +296,51 @@
     50% { transform: rotate(90deg) translateX(8px); }
   }
 }
+
+@media (max-width: 600px) {
+  .scale-section {
+    padding: var(--space-2xl) var(--space-md);
+  }
+  
+  .scale-title {
+    font-size: 1.75rem;
+  }
+  
+  .scale-card {
+    padding: var(--space-lg);
+  }
+  
+  .scale-card-revenue {
+    font-size: 2.5rem;
+  }
+  
+  .scale-card-metrics {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+  }
+  
+  .scale-metric {
+    padding: var(--space-sm);
+  }
+  
+  .scale-metric-value {
+    font-size: 1rem;
+  }
+  
+  .scale-card-allocation li,
+  .scale-card-features li {
+    font-size: 0.8rem;
+  }
+  
+  .scale-quote blockquote {
+    font-size: 1rem;
+  }
+  
+  .scale-arrow-content {
+    padding: var(--space-md);
+  }
+  
+  .scale-arrow-content span {
+    font-size: 1.25rem;
+  }
+}

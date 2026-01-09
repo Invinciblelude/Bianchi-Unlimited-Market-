@@ -165,3 +165,42 @@
     margin: 0 auto;
   }
 }
+
+@media (max-width: 600px) {
+  .budget-section {
+    padding: var(--space-2xl) var(--space-md);
+  }
+  
+  .budget-chart {
+    max-width: 280px;
+  }
+  
+  .budget-title {
+    font-size: 1.75rem;
+  }
+  
+  .budget-item {
+    padding: var(--space-md);
+  }
+  
+  .budget-item-header {
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+  }
+  
+  .budget-item-name {
+    font-size: 0.85rem;
+  }
+  
+  .budget-item-desc {
+    font-size: 0.7rem;
+  }
+  
+  .budget-item-amount {
+    font-size: 1.1rem;
+  }
+  
+  .budget-item-details ul {
+    grid-template-columns: 1fr;
+  }
+}

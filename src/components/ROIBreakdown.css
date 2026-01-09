@@ -200,9 +200,40 @@
 }
 
 @media (max-width: 600px) {
+  .roi-section {
+    padding: var(--space-2xl) var(--space-md);
+  }
+  
+  .roi-title {
+    font-size: 1.75rem;
+  }
+  
+  .roi-scenarios {
+    max-width: 100%;
+    gap: var(--space-md);
+  }
+  
+  .roi-card {
+    padding: var(--space-lg);
+  }
+  
+  .roi-card-title {
+    font-size: 1.25rem;
+  }
+  
+  .roi-stat-value {
+    font-size: 1rem;
+  }
+  
   .roi-callout {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    padding: var(--space-lg);
+    gap: var(--space-md);
+  }
+  
+  .roi-callout-content p {
+    font-size: 0.9rem;
   }
 }
