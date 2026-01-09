@@ -99,3 +99,43 @@ body {
 .bg-gold-glow {
   background: var(--gold-glow);
 }
+
+/* Smooth transitions for all interactive elements */
+a, button {
+  transition: all 0.3s ease;
+}
+
+/* Prevent text selection on UI elements */
+button, .metric-card, .status-item, .budget-item, .roi-card, .scale-card {
+  user-select: none;
+}
+
+/* Improved focus states for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--gold-base);
+  outline-offset: 2px;
+}
+
+/* Smooth image rendering */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Loading state styles */
+.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Hide scrollbar on mobile for cleaner look */
+@media (max-width: 768px) {
+  body {
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+}

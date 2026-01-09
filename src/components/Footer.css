@@ -78,6 +78,32 @@
 
 @media (max-width: 600px) {
   .footer {
-    padding: var(--space-2xl) var(--space-lg);
+    padding: var(--space-2xl) var(--space-md);
+  }
+  
+  .footer-logo {
+    font-size: 1.5rem;
+  }
+  
+  .footer-logo-accent {
+    font-size: 1rem;
+  }
+  
+  .footer-tagline {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+  }
+  
+  .footer-status {
+    font-size: 0.6rem;
+    padding: var(--space-xs) var(--space-md);
+  }
+  
+  .footer-copyright {
+    font-size: 0.75rem;
+  }
+  
+  .footer-note {
+    font-size: 0.65rem;
   }
 }
